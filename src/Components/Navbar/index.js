@@ -59,7 +59,7 @@ const Navigation = () => {
                 <AiOutlineFundProjectionScreen
                   style={{ marginBottom: "2px" }}
                 />{" "}
-                Gallery
+                Events/Gallery
               </Nav.Link>
             </Nav.Item>
 

@@ -12,7 +12,7 @@ const Home = () => {
   return (
     <>
       <section>
-        <Container fluid className="home-section" id="home">
+        <Container fluid className="home-section">
           <Container className="home-content">
             <Row>
               <Col md={7} className="home-header">
@@ -21,56 +21,78 @@ const Home = () => {
                 </h1>
                 <p className="home-about-body">
                   PIAG Museum created in 2003 is a non-profit organization 501
-                  C3, dedicated to educate, plan, organize, promote and showcase
-                  the visual arts in all its forms and manifestations throughout
-                  our community in Florida, Nationwide and Worldwide.PIAG Museum
-                  is your one-stop-shop for exploring the wonders of art.
-                  Featuring a wide array of visual arts from different cultures
-                  and eras, PIAG Museum offers something for everyone. Come
-                  discover the beauty of painting, sculpture, photography, and
-                  more at PIAG Museum!
+                  C3. PIAG Museum is your one-stop-shop for exploring the
+                  wonders of art. Featuring a wide array of visual arts from
+                  different cultures and eras, PIAG Museum offers something for
+                  everyone. Come discover the beauty of painting, sculpture,
+                  photography, and more at PIAG Museum!
                 </p>
               </Col>
-              
             </Row>
           </Container>
         </Container>
-        <Container fluid className="home-about-section" id="about">
+        <Container fluid className="home-about-section">
           <Container>
             <Row>
-                <Col md={12}>
-                   <h1 style={{ fontSize: "2.6em" }}>
-                PIAG Museum: Visual Arts on wheels
-              </h1> 
-                </Col>
-              
-              <Col md={6} className="myAvtar">
-                <Image className="img-fluid" src={Wheels} />
-              </Col>
-              <Col md={6} className="myAvtar">
+              <Col md={12} className="myAvtar">
                 <h3>
-                  <b className="red">The Phrase</b>
+                  <b className="red">Our Mission</b>
                 </h3>
                 <p>
-                  <i>
-                    <b className="red">
-                      “ If people can’t go to the museum…the museum will go to
-                      the people”
-                    </b>{" "}
-                  </i>{" "}
-                  captures the concept of PIAG Museum on Wheels. This mobile
-                  museum travels through the communities while advancing public
-                  appreciation of art at schools, universities, nursing homes
-                  and special events.
+                  PIAG MUSEUM is dedicated to educate, plan, organize, promote
+                  and showcase the visual arts in all its forms and
+                  manifestations throughout our community in Florida, Nationwide
+                  and Worldwide. Art is an important tool to provide
+                  opportunities for self-expression. We believe that art is a
+                  fundamental element in any healthy society , this is why we
+                  put an enormous amount of effort in creating outreach programs
+                  that will touch the lives of many. This concept motivates PIAG
+                  Museum to provide art education to the community through
+                  different programs and art exhibitions for the enjoyment of
+                  the artist and the public in general. Today we are proud to
+                  say, our mission and our goals have taken us to places, to
+                  people, to communities that have welcomed our knowledge, our
+                  services and our love for art with opened arms.
                 </p>
               </Col>
-              <Col md={12} className="home-about-description">
-                <p className="home-about-body">
-                  The PIAG Museum is a vibrant destination for visual arts
-                  education and enjoyment. Our museum features interactive
-                  experiences, educational workshops, and special events for
-                  everyone to enjoy. Explore the wonders of visual art and be
-                  inspired by this unique and extraordinary experience.
+            </Row>
+          </Container>
+        </Container>
+        <Container fluid className="home-about-section">
+          <Container>
+            <Row>
+              <Col md={12} className="myAvtar">
+                <h3>
+                  <b className="red">Museum's activities</b>
+                </h3>
+                <p>
+                  There is evidence that engagement with artistic activities,
+                  whether as an observer or a creator, enhances one's moods and
+                  emotions, along with benefiting one’s psychological,
+                  psychosocial and physiological state. This is why PIAG puts an
+                  enormous amount of effort in creating outreach programs that
+                  will touch the lives of many.
+                  <br></br>
+                  <br></br>
+                  We are absolutely committed to conceptualize art projects with
+                  the means to involve participants including both active and
+                  passive audiences (art providers and art recipients).
+                  <br></br>
+                  <br></br>
+                  Our activities are:
+                  <br></br>
+                  <h5>
+                    <b className="red">Earth & Water</b>
+                  </h5>
+                  <h5>
+                    <b className="red">Paint & Plant</b>
+                  </h5>
+                  <h5>
+                  <b className="red">Art Exhibitions</b>
+                </h5>
+                <h5>
+                  <b className="red">Art Workshops</b>
+                </h5>
                 </p>
               </Col>
             </Row>
@@ -79,11 +101,10 @@ const Home = () => {
         <Container fluid className="home-about-section" id="about">
           <Container>
             <Row>
-               <h1 style={{ fontSize: "2.6em" }}>
+              <h1 style={{ fontSize: "2.6em" }}>
                 PIAG Museum: "Earth & Water Project"
               </h1>
-               <Col md={4} className="myAvtar">
-               
+              <Col md={4} className="myAvtar">
                 <Image className="img-fluid" src={Cube1} />
               </Col>
               <Col md={8} className="home-about-description">
@@ -108,7 +129,6 @@ const Home = () => {
                   </Button>
                 </div>
               </Col>
-             
             </Row>
           </Container>
         </Container>
@@ -118,7 +138,7 @@ const Home = () => {
               <h1 style={{ fontSize: "2.6em" }}>
                 PIAG Museum: Art Exhibitions
               </h1>
-              <Col md={8} className="home-about-description">
+              <Col md={12} className="home-about-description-exhibit">
                 <p className="home-about-body">
                   Art must be experienced in person to truly get a sense of its
                   magnitude and to truly appreciate it. What a better way to
@@ -149,13 +169,8 @@ const Home = () => {
                   people in one event.
                   <br></br>
                   <br></br>
-                  <b className="red">
-                    In the Art education we have art workshops at schools for
-                    the youth, community events art activities, and art classes
-                    for the adults.
-                  </b>
-                  <br></br>
-                  <br></br>
+                  
+                 
                   <b className="red">2-</b> Piag Museum gives opportunity to
                   artists of all ages to showcase their work . We do beautiful
                   art exhibitions for the enjoyment of the community with this
@@ -185,13 +200,9 @@ const Home = () => {
         <Container fluid className="home-about-section" id="about">
           <Container>
             <Row>
-              <Col md={12} className="home-about-description">
-                <h1 style={{ fontSize: "2.6em" }}>
-                  Today we are proud to say, our mission and our goals have
-                  taken us to places, to people, to communities that have
-                  welcomed our knowledge, our services and our love for art with
-                  opened arms. We have many letters of recommendations that show
-                  our path, hard work and the community’s satisfaction.
+              <Col md={12} className="home-about-description-proclaim">
+                <h1 style={{ fontSize: "1.2em"}}>
+                Today we are proud to say, our mission and our goals have taken us to places, to people, to communities that have welcomed our knowledge, our services and our love for art with opened arms. And on their behalf we will continue to do so for many years to come.
                 </h1>
                 <p className="home-about-body"></p>
               </Col>
@@ -201,7 +212,7 @@ const Home = () => {
                 <Image className="img-fluid" src={Proclaim} />
               </Col>
               <Col md={6} className="myAvatar">
-                <Image className="img-fluid" src={Disney}/>
+                <Image className="img-fluid" src={Disney} />
               </Col>
             </Row>
           </Container>

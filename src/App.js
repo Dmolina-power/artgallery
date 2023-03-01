@@ -8,6 +8,8 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home";
 import Earth from "./Pages/EarthAndWater";
 import Director from "./Pages/ArtDirector";
+import Gallery from "./Pages/Gallery";
+import Contact from "./Pages/Contact";
 
 //CSS
 import './App.css';
@@ -33,6 +35,8 @@ const App = () => {
     <Route path="/" element={<Home />} />
     <Route path="/earthandwater" element={<Earth />} />
     <Route path="/director" element={<Director />} />
+    <Route path="/gallery" element={<Gallery/>} />
+    <Route path="/contact" element={<Contact/>} />
       </Routes>
     <Footer />
     </div>
