@@ -6,6 +6,7 @@ import Image from "react-bootstrap/Image";
 import Proclaim from "../../Assets/proclaim.jpg";
 import Cube1 from "../../Assets/cube1.jpg";
 import Wheels from "../../Assets/wheels.jpg";
+import Disney from "../../Assets/disney.jpg";
 
 const Home = () => {
   return (
@@ -30,6 +31,7 @@ const Home = () => {
                   more at PIAG Museum!
                 </p>
               </Col>
+              
             </Row>
           </Container>
         </Container>
@@ -199,7 +201,7 @@ const Home = () => {
                 <Image className="img-fluid" src={Proclaim} />
               </Col>
               <Col md={6} className="myAvatar">
-                <Image className="img-fluid" />
+                <Image className="img-fluid" src={Disney}/>
               </Col>
             </Row>
           </Container>

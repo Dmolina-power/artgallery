@@ -89,14 +89,21 @@ html {
 	.navbar {
 		padding: 1rem 2rem !important;
 		font-size: 1.4rem !important;
-		background-color: #000000 !important;
+		background-color: white !important;
 	}
 	.navbar-nav .nav-item a::after {
 		display: none !important;
 	}
 }
 .navbar-brand {
-	color: rgb(203, 58, 36) !important;
+
+	
+		
+		background: url(./Assets/logo1.png);
+		height: 150px;
+		width: 150px;
+		background-size: contain;
+	
 }
 
 .logo {
@@ -163,12 +170,15 @@ svg.bi.bi-instagram{
 /* --------- */
 
 .home-header {
-	
+
 	padding-top: 80px !important;
 }
 
 .home-section {
-	/* background-image: url(./Assets/home-bg.jpg); */
+	background-image:  linear-gradient(
+		rgba(0, 0, 0, 0.5),
+		rgba(0, 0, 0, 0.5)
+	  ),url(./Assets/gallery.jpg);
 	position: relative;
 	z-index: -1;
 	background-color: #010001;
@@ -183,13 +193,15 @@ background-repeat: no-repeat;
 
 .home-content {
 	padding: 9rem 0 2rem !important;
-	color: whitesmoke;
+	color: white;
 	text-align: left;
+	
 }
 
 .heading {
 	font-size: 2.4em !important;
 	padding-left: 50px !important;
+	
 }
 
 .heading-name {
@@ -340,4 +352,32 @@ a.btn.btn-info.btn-lg{
 
 .blockquote-footer {
 	color: #474fee !important;
+}
+
+/* --------- */
+/* Earth */
+/* --------- */
+
+.earth-section {
+	background-image:  linear-gradient(
+		rgba(0, 0, 0, 0.5),
+		rgba(0, 0, 0, 0.5)
+	  ),url(./Assets/\ cubesMain.jpg);
+	position: relative;
+	z-index: -1;
+	background-color: #010001;
+	background-position: top center;
+	max-width: 100%;
+	height: auto;
+background-size:cover;  
+background-repeat: no-repeat;
+	padding-bottom: 30px !important;
+	padding-top: 30px !important;
+}
+
+.earth-content {
+	padding: 9rem 0 2rem !important;
+	color: white;
+	text-align: left;
+	
 }

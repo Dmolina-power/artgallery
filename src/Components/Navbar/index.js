@@ -5,6 +5,8 @@ import Navbar from "react-bootstrap/Navbar";
 import { Link } from "react-router-dom";
 import { AiOutlineFundProjectionScreen } from "react-icons/ai";
 import { MdOutlineContactMail } from "react-icons/md";
+import Piag from "../../Assets/PIAG.png";
+import Image from "react-bootstrap/Image";
 
 const Navigation = () => {
   const [expand, updateExpanded] = useState(false);
@@ -28,7 +30,12 @@ const Navigation = () => {
       className={navColour ? "sticky" : "navbar"}
     >
       <Container>
-        <Navbar.Brand href="/">PIAG MUSEUM</Navbar.Brand>
+      
+        <Navbar.Brand href="/">
+        
+           
+        </Navbar.Brand>
+        
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
           onClick={() => {
