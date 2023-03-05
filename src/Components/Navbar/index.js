@@ -7,6 +7,7 @@ import { AiOutlineFundProjectionScreen } from "react-icons/ai";
 import { MdOutlineContactMail } from "react-icons/md";
 import Piag from "../../Assets/PIAG.png";
 import Image from "react-bootstrap/Image";
+import "./style.css";
 
 const Navigation = () => {
   const [expand, updateExpanded] = useState(false);

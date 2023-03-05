@@ -1,225 +1,27 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import Button from "react-bootstrap/Button";
-import { Link } from "react-router-dom";
-import Image from "react-bootstrap/Image";
-import Proclaim from "../../Assets/proclaim.jpg";
-import Cube1 from "../../Assets/cube1.jpg";
-import Wheels from "../../Assets/wheels.jpg";
-import Disney from "../../Assets/disney.jpg";
+import HomeSection from "../../Components/HomeSection";
+import MissionSection from "../../Components/MissionSection";
+import ActivitiesSection from "../../Components/ActivitiesSection";
+import EarthSection from "../../Components/EarthSection";
+import ExhibSection from "../../Components/ExhibSection";
+import UniqueSection from "../../Components/UniqueSection";
+import EndSection from "../../Components/EndSection";
+
 
 const Home = () => {
   return (
     <>
       <section>
-        <Container fluid className="home-section">
-          <Container className="home-content">
-            <Row>
-              <Col md={7} className="home-header">
-                <h1 style={{ paddingBottom: 15 }} className="heading">
-                  Explore the Wonders of Art at PIAG Museum{" "}
-                </h1>
-                <p className="home-about-body">
-                  PIAG Museum created in 2003 is a non-profit organization 501
-                  C3. PIAG Museum is your one-stop-shop for exploring the
-                  wonders of art. Featuring a wide array of visual arts from
-                  different cultures and eras, PIAG Museum offers something for
-                  everyone. Come discover the beauty of painting, sculpture,
-                  photography, and more at PIAG Museum!
-                </p>
-              </Col>
-            </Row>
-          </Container>
-        </Container>
-        <Container fluid className="home-about-section">
-          <Container>
-            <Row>
-              <Col md={12} className="myAvtar">
-                <h3>
-                  <b className="red">Our Mission</b>
-                </h3>
-                <p>
-                  PIAG MUSEUM is dedicated to educate, plan, organize, promote
-                  and showcase the visual arts in all its forms and
-                  manifestations throughout our community in Florida, Nationwide
-                  and Worldwide. Art is an important tool to provide
-                  opportunities for self-expression. We believe that art is a
-                  fundamental element in any healthy society , this is why we
-                  put an enormous amount of effort in creating outreach programs
-                  that will touch the lives of many. This concept motivates PIAG
-                  Museum to provide art education to the community through
-                  different programs and art exhibitions for the enjoyment of
-                  the artist and the public in general. Today we are proud to
-                  say, our mission and our goals have taken us to places, to
-                  people, to communities that have welcomed our knowledge, our
-                  services and our love for art with opened arms.
-                </p>
-              </Col>
-            </Row>
-          </Container>
-        </Container>
-        <Container fluid className="home-about-section">
-          <Container>
-            <Row>
-              <Col md={12} className="myAvtar">
-                <h3>
-                  <b className="red">Museum's activities</b>
-                </h3>
-                <p>
-                  There is evidence that engagement with artistic activities,
-                  whether as an observer or a creator, enhances one's moods and
-                  emotions, along with benefiting one’s psychological,
-                  psychosocial and physiological state. This is why PIAG puts an
-                  enormous amount of effort in creating outreach programs that
-                  will touch the lives of many.
-                  <br></br>
-                  <br></br>
-                  We are absolutely committed to conceptualize art projects with
-                  the means to involve participants including both active and
-                  passive audiences (art providers and art recipients).
-                  <br></br>
-                  <br></br>
-                  Our activities are:
-                  <br></br>
-                  <h5>
-                    <b className="red">Earth & Water</b>
-                  </h5>
-                  <h5>
-                    <b className="red">Paint & Plant</b>
-                  </h5>
-                  <h5>
-                  <b className="red">Art Exhibitions</b>
-                </h5>
-                <h5>
-                  <b className="red">Art Workshops</b>
-                </h5>
-                </p>
-              </Col>
-            </Row>
-          </Container>
-        </Container>
-        <Container fluid className="home-about-section" id="about">
-          <Container>
-            <Row>
-              <h1 style={{ fontSize: "2.6em" }}>
-                PIAG Museum: "Earth & Water Project"
-              </h1>
-              <Col md={4} className="myAvtar">
-                <Image className="img-fluid" src={Cube1} />
-              </Col>
-              <Col md={8} className="home-about-description">
-                <p className="home-about-body">
-                  In the Art education we have art workshops at schools &
-                  community events. We have many innovative art projects, the
-                  latest one among so many we have and that has been very
-                  successful and also unique is the “Earth & Water Project”.
-                  <br></br>
-                  <br></br>
-                  Want to learn more about the "Earth & Water Project" click
-                  below.
-                </p>
-                <div className="d-grid gap-2">
-                  <Button
-                    variant="info"
-                    size="lg"
-                    as={Link}
-                    to="/earthandwater"
-                  >
-                    Earth & Water Project
-                  </Button>
-                </div>
-              </Col>
-            </Row>
-          </Container>
-        </Container>
-        <Container fluid className="home-about-section" id="about">
-          <Container>
-            <Row>
-              <h1 style={{ fontSize: "2.6em" }}>
-                PIAG Museum: Art Exhibitions
-              </h1>
-              <Col md={12} className="home-about-description-exhibit">
-                <p className="home-about-body">
-                  Art must be experienced in person to truly get a sense of its
-                  magnitude and to truly appreciate it. What a better way to
-                  expose the artist work and for the public to appreciate it
-                  than with Art exhibitions. Many artist are rejected in art
-                  galleries because they do not have an extensive curriculum.
-                  Piag Museum gives opportunity to artists of all ages to
-                  showcase their work considering more their talent, creativity
-                  and quality of art work rather than his resume. We will
-                  continue to do Art exhibitions and also floating art
-                  exhibitions for the enjoyment of the young and old.
-                </p>
-              </Col>
-            </Row>
-          </Container>
-        </Container>
-
-        <Container fluid className="home-about-section" id="about">
-          <Container>
-            <Row>
-              <Col md={12} className="home-about-description">
-                <h1 style={{ fontSize: "2.6em" }}>
-                  Why are we <b className="red">Unique?</b>
-                </h1>
-                <p className="home-about-body">
-                  <b className="red">1-</b>Instead of the people going to the
-                  museum we go to the people. This way we can reach hundreds of
-                  people in one event.
-                  <br></br>
-                  <br></br>
-                  
-                 
-                  <b className="red">2-</b> Piag Museum gives opportunity to
-                  artists of all ages to showcase their work . We do beautiful
-                  art exhibitions for the enjoyment of the community with this
-                  artist that haven't been able to exhibit because we consider
-                  the quality of work not their resume.
-                  <br></br>
-                  <br></br>
-                  <b className="red">3-</b> Besides the regular exhibits,
-                  floating art exhibitions in lakes is a unique way to showcase
-                  art and more amazing is that the theme is the environment and
-                  the awareness toward the protection of our planet.Portraying a
-                  beautiful landscapes or sending a message is a way to use art
-                  in an educational way.
-                </p>
-                <br></br>
-                <br></br>
-                <p>Learn more about the Art Director below!</p>
-                <div className="d-grid gap-2">
-                  <Button variant="info" size="lg" as={Link} to="/director">
-                    Art Director
-                  </Button>
-                </div>
-              </Col>
-            </Row>
-          </Container>
-        </Container>
-        <Container fluid className="home-about-section" id="about">
-          <Container>
-            <Row>
-              <Col md={12} className="home-about-description-proclaim">
-                <h1 style={{ fontSize: "1.2em"}}>
-                Today we are proud to say, our mission and our goals have taken us to places, to people, to communities that have welcomed our knowledge, our services and our love for art with opened arms. And on their behalf we will continue to do so for many years to come.
-                </h1>
-                <p className="home-about-body"></p>
-              </Col>
-            </Row>
-            <Row>
-              <Col md={6} className="myAvatar">
-                <Image className="img-fluid" src={Proclaim} />
-              </Col>
-              <Col md={6} className="myAvatar">
-                <Image className="img-fluid" src={Disney} />
-              </Col>
-            </Row>
-          </Container>
-        </Container>
-      </section>
+        <HomeSection />
+        <MissionSection />
+        <ActivitiesSection />
+        <EarthSection />
+        <ExhibSection />
+        <UniqueSection />
+        <EndSection /> 
+        </section>
     </>
   );
-};
-
-export default Home;
+};   
+      
+ export default Home;
