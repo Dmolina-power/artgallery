@@ -8,9 +8,8 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home";
 import Earth from "./Pages/EarthAndWater";
 import Director from "./Pages/ArtDirector";
-import Gallery from "./Pages/Gallery";
-import Contact from "./Pages/Contact";
-
+import Support from "./Pages/Support";
+import Paint from "./Pages/PaintPot";
 //CSS
 import './App.css';
 
@@ -34,9 +33,9 @@ const App = () => {
     <Routes>
     <Route path="/" element={<Home />} />
     <Route path="/earthandwater" element={<Earth />} />
+    <Route path="/paint" element={<Paint />} />
     <Route path="/director" element={<Director />} />
-    <Route path="/gallery" element={<Gallery/>} />
-    <Route path="/contact" element={<Contact/>} />
+    <Route path="/support" element={<Support/>} />
       </Routes>
     <Footer />
     </div>

@@ -6,6 +6,9 @@ import EarthSection from "../../Components/EarthSection";
 import ExhibSection from "../../Components/ExhibSection";
 import UniqueSection from "../../Components/UniqueSection";
 import EndSection from "../../Components/EndSection";
+import PaintSection from "../../Components/PaintSection";
+import WorkSection from "../../Components/WorkSection";
+import ContactForm from "../../Components/Form";
 
 
 const Home = () => {
@@ -16,9 +19,12 @@ const Home = () => {
         <MissionSection />
         <ActivitiesSection />
         <EarthSection />
+        <PaintSection />
         <ExhibSection />
+        <WorkSection />
         <UniqueSection />
         <EndSection /> 
+        <ContactForm />
         </section>
     </>
   );

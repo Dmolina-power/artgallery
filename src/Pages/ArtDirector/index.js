@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Image from "react-bootstrap/Image";
 import Dir from "../../Assets/director.jpg";
+import "./style.css";
 
 const Director = () => {
   return (
@@ -9,19 +10,19 @@ const Director = () => {
       <Container fluid className="dir-section">
         <Container className="dir-content">
           <Row>
-            <Col md={7} className="home-header">
-              <h1 style={{ paddingBottom: 15 }} className="heading">
+            <Col md={7} className="dir-header">
+              <h1 style={{ paddingBottom: 15 }} className="dir-heading">
                 About the Director
               </h1>
             </Col>
           </Row>
         </Container>
       </Container>
-      <Container fluid className="home-about-section">
+      <Container fluid className="dir-section2">
         <h1>Director Mireya Perez-Power</h1>
         <Image src={Dir} />
 
-        <p className="home-about-body">
+        <p className="dir-body">
           Born in Caracas, Venezuela and since very young was interested in the
           arts. Study arts in Florence Italy when she was a young at the Poggie
           Imperiale. Since then her passion have taken her far in the art world.

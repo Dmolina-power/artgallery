@@ -1,13 +1,14 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import "./style.css";
 
 const ActivitisesSection = () => {
 
 return(
-<Container fluid className="home-about-section">
+<Container fluid className="activities-section">
           <Container>
             <Row>
-              <Col md={12} className="myAvtar">
+              <Col md={12} className="activities-align">
                 <h3>
                   <b className="red">Museum's activities</b>
                 </h3>

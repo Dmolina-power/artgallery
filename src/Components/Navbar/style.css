@@ -74,14 +74,10 @@
 	}
 }
 .navbar-brand {
-
-	
-		
-		background: url(src/Assets/logo1.png);
+		background: url(../../Assets/logo1.png);
 		height: 150px;
 		width: 150px;
 		background-size: contain;
-	
 }
 
 .logo {

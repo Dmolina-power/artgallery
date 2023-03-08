@@ -5,8 +5,6 @@ import Navbar from "react-bootstrap/Navbar";
 import { Link } from "react-router-dom";
 import { AiOutlineFundProjectionScreen } from "react-icons/ai";
 import { MdOutlineContactMail } from "react-icons/md";
-import Piag from "../../Assets/PIAG.png";
-import Image from "react-bootstrap/Image";
 import "./style.css";
 
 const Navigation = () => {
@@ -31,12 +29,8 @@ const Navigation = () => {
       className={navColour ? "sticky" : "navbar"}
     >
       <Container>
-      
-        <Navbar.Brand href="/">
-        
-           
-        </Navbar.Brand>
-        
+        <Navbar.Brand href="/"></Navbar.Brand>
+
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
           onClick={() => {
@@ -49,31 +43,16 @@ const Navigation = () => {
         </Navbar.Toggle>
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ml-auto" defaultActiveKey="#home">
-           
-
             <Nav.Item>
               <Nav.Link
                 as={Link}
-                to="/gallery"
+                to="/support"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineFundProjectionScreen
-                  style={{ marginBottom: "2px" }}
-                />{" "}
-                Events/Gallery
+                <MdOutlineContactMail style={{ marginBottom: "2px" }} /> Our Supporters
               </Nav.Link>
             </Nav.Item>
-
             <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/contact"
-                onClick={() => updateExpanded(false)}
-              >
-                <MdOutlineContactMail style={{ marginBottom: "2px" }} /> Contact
-              </Nav.Link>
-            </Nav.Item>
-             <Nav.Item>
               <a
                 className="social"
                 href="https://www.facebook.com/profile.php?id=100057744186259"
